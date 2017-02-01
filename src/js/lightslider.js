@@ -30,6 +30,7 @@
         gallery: false,
         galleryMargin: 5,
         thumbMargin: 5,
+        minPager: 2,
         currentPagerPosition: 'middle',
         enableTouch: true,
         enableDrag: true,
@@ -362,7 +363,7 @@
                         if (settings.mode === 'slide') {
                             if ((v) >= w - elSize - settings.slideMargin) {
                                 i = i + 1;
-                                var minPgr = 2;
+                                var minPgr = settings.minPager;
                                 if (settings.autoWidth) {
                                     pagers += '<li><a href="#">' + (i + 1) + '</a></li>';
                                     minPgr = 1;
